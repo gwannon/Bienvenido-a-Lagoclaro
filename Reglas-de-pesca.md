@@ -52,13 +52,18 @@ xxx
 
 xxx
 
-|1d10|Captura|Peso|
-|----|-------|----|
-|1-2|Trucha|1d4|
-|3-4|Carpa|xxx|
-|5-6|Barbo|xxx|
-|7-8|Salmón|xxx|
-|9-10|Lucio|xxx|
+|1d10|Captura|Peso (kg)|Precio (mp)|
+|----|-------|----|------|
+|1-2|Trucha|1d4|xxx|
+|3-4|Perca|1d4|xxx|
+|3-4|Carpa|1d6|xxx|
+|5-6|Barbo|1d6|xxx|
+|7-8|Salmón|1d8|xxx|
+|9-10|Lucio|1d8|xxx|
+|9-10|Perca atruchada|xxx|xxx|
+
+Al precio del pescado se le suma el peso en mp.
+
 ***
 
 ## Pesca y magia
