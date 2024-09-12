@@ -1,6 +1,8 @@
 # Bienvenido a Lagoclaro
 Reglas de pesca para Dungeons&amp;Dragons 5e.
 
+Desarrollo usando OPEN	GAME	LICENSE	Version	1.0a
+
 ## Atribuciones
 * [lago.jpg](https://pixabay.com/illustrations/landscape-sky-clouds-blue-lake-3606096/) por [Almeida](https://pixabay.com/users/aalmeidah-4277022/)
 
