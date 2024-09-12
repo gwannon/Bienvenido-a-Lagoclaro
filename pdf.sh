@@ -5,4 +5,4 @@ chromium --no-sandbox --headless --gpu --no-pdf-header-footer --print-to-pdf=./t
 pdftk 'temp.pdf' update_info_utf8 'metas.txt' output 'Reglas-de-pesca.pdf'
 rm temp.pdf
 rm metas.txt
-rm Reglas-de-pesca.html
+#rm Reglas-de-pesca.html

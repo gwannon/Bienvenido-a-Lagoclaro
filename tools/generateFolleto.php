@@ -5,17 +5,17 @@ require __DIR__ . '/../vendor/autoload.php';
 $tags = [
   'HTML' => '',
   'HASH' => date("YmdHis"),
-  'TITLE' => "Grúas&Carretas: Guía interna de cobro de multas",
-  'DESCRIPTION' => 'En esta guía interna encontrarás todo lo necesario para dirigir a tu mesa divertidas aventuras de Grúas&Carretas.',
-  'VERSION' => "1.1",
+  'TITLE' => "Bienvenido a Lagoclaro, disfrute de su retiro de pesca",
+  'DESCRIPTION' => 'En este folleto, patrocinado por la mancomunidad de Lagoclaro en conjunción con el gremio de cerveceros, podrá encontrar interesantes reglas de pesca para Dungeons&Dragons 5e.',
+  'VERSION' => "0.1",
   'AUTHOR' => "@Gwannon",
   'AUTHORURL' => "https://gwannon.itch.io/",
-  'BGCOLOR1' => "#ff2a3b",
-  'BGCOLOR2' => "#ad1b3b",
-  'BGCOLOR3' => "#58041a",
-  'BORDERCOLOR' => "#ff0000",
-  'BG' => "#ffbcc1",
-  'BGINSIDE' => "#ff8d95",
+  'BGCOLOR1' => "#2f7d20",
+  'BGCOLOR2' => "#30ab19",
+  'BGCOLOR3' => "#183b11",
+  'BORDERCOLOR' => "#00afff",
+  'BG' => "#a5efff",
+  'BGINSIDE' => "#3597f0",
 ];
 
 //Generamos el HTML
@@ -29,7 +29,7 @@ foreach ($tags as $tag => $value) {
   $html = str_replace("|".$tag."|", $value, $html); 
 }
 
-$html = str_replace("<p>\salto</p>", "</div><div>", $html);
+$html = str_replace("<hr />", "</div><div>", $html);
 
 
 file_put_contents(__DIR__ . "/../Reglas-de-pesca.html", $html);

@@ -16,19 +16,27 @@
   <style>
     /* 1123x794 */
     @font-face {
+      font-family: 'AlmendraDisplay';
+      font-style: normal;
+      font-weight: 400;
+      src: url(./fonts/AlmendraDisplay-Regular.ttf) format('truetype');
+    }
+
+
+    @font-face {
       font-family: 'MedievalSharp';
       font-style: normal;
       font-weight: 400;
       src: url(./fonts/MedievalSharp-Regular.ttf) format('truetype');
     }
 
-    @font-face {
+    /*@font-face {
       font-family: 'Open Sans';
       src:
         url(./fonts/OpenSans-VariableFont_wdth,wght.ttf) format('truetype') tech(variations);
       font-weight: 100 900;
       font-stretch: 50% 200%;
-    }
+    }*/
 
     :root {
       --bgcolor1: |BGCOLOR1|;
@@ -39,16 +47,16 @@
       --bginside: |BGINSIDE|;
     }
 
-
     body {
       background-color: var(--bg);
       padding: 0px;
       margin: 0px;
-      font-family: "Open Sans", sans-serif;
+      font-family: "MedievalSharp", sans-serif;
       font-weight: 400;
       font-style: normal;
-      font-size: 12px;
+      font-size: 14px;
       line-height: 120%;
+      color: black;
     }
   
     section {
@@ -57,6 +65,7 @@
       height: 100vh;
       padding: 20px;
       flex-wrap: wrap;
+      
     }
   
     section > div {
@@ -64,19 +73,20 @@
       width: calc(33.33% - 27px);
       height: calc(100vh - 40px);
       box-sizing: border-box;
-      background-color: var(--bginside);
+      background: var(--bginside) url('./images/lago1.jpg') center bottom no-repeat;
+      background-size: 100% auto;
       padding: 0 10px 10px 10px;
     }
   
-    section > div:nth-of-type(1) { order: 6; }
+    section > div:nth-of-type(1) { order: 6; background-image: url('./images/lago3.jpg'); }
     section > div:nth-of-type(2) { order: 1; }
-    section > div:nth-of-type(3) { order: 2; }
-    section > div:nth-of-type(4) { order: 3; }
+    section > div:nth-of-type(3) { order: 2; background-image: url('./images/lago2.jpg');}
+    section > div:nth-of-type(4) { order: 3; background-image: url('./images/lago3.jpg');}
     section > div:nth-of-type(5) { order: 4; }
-    section > div:nth-of-type(6) { order: 5; }
+    section > div:nth-of-type(6) { order: 5; background-image: url('./images/lago2.jpg'); }
   
     h1, h2, h3, h4 {
-      font-family: "MedievalSharp", cursive;
+      font-family: "AlmendraDisplay", cursive;
     }
 
     h1 + *, h2 + * {
@@ -84,17 +94,13 @@
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 3em;
       text-align: center;
       line-height: 85%;
       color: var(--bgcolor2);
-      text-shadow: 2px 2px 0px #2a3651;
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, .3), 0px -1px 0px rgba(0, 0, 0, .7);
       margin-top: 20px;
-    }
-  
-    h1 span {
-      display: inline-block;
-      font-size: 58px;
+      font-weight: 900;
     }
   
     h2 {
@@ -102,12 +108,14 @@
       --padding: 10px;
       background-color: var(--bgcolor1);
       color: #fff;
+      font-size: 1.8em;
       padding: var(--padding);
       position: relative;
       margin-left: var(--ribbon-size);
       margin-right: var(--ribbon-size);
       margin-bottom: var(--padding);
       text-align: center;
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, .3), 0px -1px 0px rgba(0, 0, 0, .7);
     }
   
     h2:before {
@@ -165,6 +173,12 @@
       );
     }
 
+    h3 {
+      font-size: 1.9em;
+      color: var(--bgcolor1);
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, .3), 0px -1px 0px rgba(0, 0, 0, .7);
+    }
+
     h4 {
       margin-bottom: 5px;
     }
@@ -179,6 +193,26 @@
 
     a {
       color: black;
+    }
+
+    h2 + p:first-letter {
+      text-transform: uppercase;
+      font-family: 'AlmendraDisplay', cursive;
+      font-size: 2.9em;
+      line-height: 150%;
+      font-weight: 900;
+      display: block;
+      float: left;
+      margin: 3px 10px 0px 0px;
+      padding: 5px 10px 0px;
+      border: 1px solid var(--bgcolor3);
+      color: #000;
+      min-height: 64px;
+      --s: 15px;   
+      background:
+        linear-gradient(135deg,#0000 18.75%,var(--bgcolor1) 0 31.25%,#0000 0),
+        repeating-linear-gradient(45deg,var(--bgcolor1) -6.25% 6.25%, var(--bgcolor2) 0 18.75%);
+      background-size: var(--s) var(--s); 
     }
   
     @media print {
