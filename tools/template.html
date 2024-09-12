@@ -85,7 +85,7 @@
       font-size: 3em;
       text-align: center;
       line-height: 85%;
-      color: var(--bgcolor2);
+      color: var(--bgcolor3);
       text-shadow: 0px 1px 0px rgba(255, 255, 255, .3), 0px -1px 0px rgba(0, 0, 0, .7);
       margin-top: 20px;
       font-weight: 900;
@@ -178,8 +178,12 @@
       margin-top: 5px;
     }
 
-    table tr:nth-of-type(even) {
+    table thead tr {
       background-color: var(--bgcolor1);
+    } 
+
+    table tbody tr:nth-of-type(even) {
+      background-color: var(--bgcolor2);
     } 
 
     ul {
