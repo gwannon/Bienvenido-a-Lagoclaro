@@ -7,7 +7,7 @@ En este folleto, patrocinado por la mancomunidad de Lagoclaro en conjunción con
 
 ## La pesca
 
-En la pesca entran en juego tres elementos, el lugar, el equipo y tu habilidad para lanzar/recoger. Así pués, en esta mecánica entran en juego estos tres elementos.
+En la pesca entran en juego tres elementos, el lugar, el equipo y tu habilidad para lanzar/recoger. Así pues, en esta mecánica entran en juego estos tres elementos.
 
 xxx
 
