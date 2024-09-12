@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- /* cSpell:disable */ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- /* cSpell:enable */ -->
+  <title>|TITLE|</title>
+  <meta name="description"
+    content="|DESCRIPTION| Versión |VERSION|">
+  <meta property="og:title"
+    content="|TITLE|">
+  <meta property="og:description"
+    content="|DESCRIPTION| Versión |VERSION|">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <style>
+    /* 1123x794 */
+    @font-face {
+      font-family: 'MedievalSharp';
+      font-style: normal;
+      font-weight: 400;
+      src: url(./fonts/MedievalSharp-Regular.ttf) format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Open Sans';
+      src:
+        url(./fonts/OpenSans-VariableFont_wdth,wght.ttf) format('truetype') tech(variations);
+      font-weight: 100 900;
+      font-stretch: 50% 200%;
+    }
+
+    :root {
+      --bgcolor1: |BGCOLOR1|;
+      --bgcolor2: |BGCOLOR2|;
+      --bgcolor3: |BGCOLOR3|;
+      --bordercolor: |BORDERCOLOR|;
+      --bg: |BG|;
+      --bginside: |BGINSIDE|;
+    }
+
+
+    body {
+      background-color: var(--bg);
+      padding: 0px;
+      margin: 0px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 12px;
+      line-height: 120%;
+    }
+  
+    section {
+      display: flex;
+      gap: 40px;
+      height: 100vh;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+  
+    section > div {
+      border: 1px solid var(--bordercolor);
+      width: calc(33.33% - 27px);
+      height: calc(100vh - 40px);
+      box-sizing: border-box;
+      background-color: var(--bginside);
+      padding: 0 10px 10px 10px;
+    }
+  
+    section > div:nth-of-type(1) { order: 6; }
+    section > div:nth-of-type(2) { order: 1; }
+    section > div:nth-of-type(3) { order: 2; }
+    section > div:nth-of-type(4) { order: 3; }
+    section > div:nth-of-type(5) { order: 4; }
+    section > div:nth-of-type(6) { order: 5; }
+  
+    h1, h2, h3, h4 {
+      font-family: "MedievalSharp", cursive;
+    }
+
+    h1 + *, h2 + * {
+      margin-top: 25px;
+    }
+
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      line-height: 85%;
+      color: var(--bgcolor2);
+      text-shadow: 2px 2px 0px #2a3651;
+      margin-top: 20px;
+    }
+  
+    h1 span {
+      display: inline-block;
+      font-size: 58px;
+    }
+  
+    h2 {
+      --ribbon-size: 50px;
+      --padding: 10px;
+      background-color: var(--bgcolor1);
+      color: #fff;
+      padding: var(--padding);
+      position: relative;
+      margin-left: var(--ribbon-size);
+      margin-right: var(--ribbon-size);
+      margin-bottom: var(--padding);
+      text-align: center;
+    }
+  
+    h2:before {
+      content: "";
+  
+      height: 100%;
+      box-sizing: border-box;
+      width: calc(100% + var(--ribbon-size));
+      background-color: var(--bgcolor2);
+      background: linear-gradient(
+        90deg,
+        var(--bgcolor2) calc((var(--ribbon-size) / 2) + var(--padding)),
+        var(--bgcolor3) calc((var(--ribbon-size) / 2) + var(--padding)),
+        var(--bgcolor3) calc(100% - (var(--ribbon-size) / 2) - var(--padding)),
+        var(--bgcolor2) calc(100% - (var(--ribbon-size) / 2) - var(--padding))
+      );
+  
+      position: absolute;
+      left: calc(var(--ribbon-size) / -2);
+      top: var(--padding);
+      clip-path: polygon(
+        0% 0%,
+        calc(var(--ribbon-size) / 2) 0%,
+        calc(var(--ribbon-size) / 2) calc(100% - var(--padding)),
+        calc(100% - (var(--ribbon-size) / 2)) calc(100% - var(--padding)),
+        calc(100% - (var(--ribbon-size) / 2)) 0%,
+        100% 0%,
+        calc(100% - (var(--padding) * 2)) 50%,
+        100% 100%,
+        calc(100% - (var(--ribbon-size) / 2) - var(--padding)) 100%,
+        calc(100% - (var(--ribbon-size) / 2) - var(--padding))
+          calc(100% - var(--padding)),
+        calc((var(--ribbon-size) / 2) + var(--padding)) calc(100% - var(--padding)),
+        calc((var(--ribbon-size) / 2) + var(--padding)) 100%,
+        0% 100%,
+        calc(var(--padding) * 2) 50%
+      );
+    }
+  
+    h2:after {
+      content: "";
+      position: absolute;
+      background-color: var(--bgcolor3);
+      width: 100%;
+      bottom: calc(var(--padding) * -1);
+      left: 0px;
+      height: var(--padding);
+      clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        calc(100% - var(--padding)) 100%,
+        calc(100% - var(--padding)) 0%,
+        var(--padding) 0%,
+        var(--padding) 100%
+      );
+    }
+
+    h4 {
+      margin-bottom: 5px;
+    }
+
+    h4 + p {
+      margin-top: 5px;
+    }
+
+    table tr:nth-of-type(even) {
+      background-color: var(--bgcolor1);
+    } 
+
+    a {
+      color: black;
+    }
+  
+    @media print {
+      @page {
+        size: A4 landscape;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div>
+      |HTML|
+    </div>
+  </section>
+</body>
+</html>
