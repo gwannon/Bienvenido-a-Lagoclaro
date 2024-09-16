@@ -173,4 +173,4 @@ Una opción más rápida suele ser de 1 o 2 días y gana la persona que consiga 
 
 Las reglas se resumen en que **nadie puede ayudar al pescador/a** y cuenta como captura toda pieza con **branquias**, cubierta por los menos un **80% de escamas de pez**, que sea **de este plano** y estuviera **viva antes de su pesca**.
 
-> -- Creado por [Gwannon](|AUTHORURL|) --
+> -- Creado por [|AUTHOR|](|AUTHORURL|) Ver. |VERSION| --
