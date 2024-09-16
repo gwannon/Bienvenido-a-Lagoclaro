@@ -187,13 +187,19 @@
       background-color: var(--bgcolor2);
     } 
 
-    div > table:first-of-type {
+    div > table:first-child,
+    div > h4:first-child {
       margin-top: 10px;
     }
 
     ul, ol {
       padding-left: 18px;
       font-size: 12px;
+    }
+
+    blockquote p {
+      text-align: center;
+      font-weight: bold;
     }
 
     a {

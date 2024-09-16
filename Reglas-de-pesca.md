@@ -44,9 +44,7 @@ Si es competente con las herramientas de pesca puede sumar su bono de proficienc
 
 #### Cebos
 
-Tan importante como los aparejos de pesca es el cebo. Desde la humilde miga de pan hasta la miga de lembas
-
-
+Tan importante como los aparejos de pesca es el cebo, desde la humilde miga de pan hasta el pan élfico.
 
 |Cebo|Efecto al lanzar|¹Precio (mp)|
 |----|-------|----|
@@ -106,10 +104,12 @@ Tras un día de pesca, la mancomunidad de Lagoclaro sabe que no hay nada mejor q
 
 Al contar su anécdota, debe hacer una tirada de Engañar (CA 15). Gastar 5 mo en bebida da ventaja.
 
-* **Éxito:** Te aplauden y le dan consejos (ventaja) a una futura tirada para buscar un lugar de pesca.
+* **Éxito:** Le aplauden y le dan consejos (ventaja) a una futura tirada para buscar un lugar de pesca.
 * **Fallo:** Se ríen y te llaman exagerado.
 * **Crítico:** A discreción del DM como invitarte a un exclusivo concurso de pesca.
 * **Pifia:** Le abuchean, le llaman mentiroso y le echan de la taberna.
+
+Si puedes mostrar el pez capturado de tu historia o alguna otra prueba como un trofeo la CA baja a 10.
 
 ***
 
@@ -139,7 +139,7 @@ Están ordenados por su valor, de forma que según recorres la tabla son más va
 |14|Perca atruchada|1d8+2|24 mp|
 |15|Corvina mithril|2d6|26 mp|
 |16|Siluro dragón|1d10+2|28 mp|
-|17|Esturión troll|3d6|29 mp¹|
+|17|Esturión trol|3d6|29 mp¹|
 |18|Pez de fuego|2d8|32 mp|
 |19|Trucha élfica|1d12+2|40 mp|
 |20|Tesoro²|Especial³|Especial⁴|
@@ -149,7 +149,7 @@ Están ordenados por su valor, de forma que según recorres la tabla son más va
 3. _el peso del objeto mágico_
 4. _el precio del objeto mágico_
 
-Al precio del pescado se le suma el peso en mp.
+Al precio del pescado se le suma el peso en mp y al peso se le suma el precio en gramos.
 
 ***
 
@@ -172,3 +172,5 @@ Cada día al anochecer, cada concursante trae su pieza más grande a pesar y reg
 Una opción más rápida suele ser de 1 o 2 días y gana la persona que consiga la captura más grande.
 
 Las reglas se resumen en que **nadie puede ayudar al pescador/a** y cuenta como captura toda pieza con **branquias**, cubierta por los menos un **80% de escamas de pez**, que sea **de este plano** y estuviera **viva antes de su pesca**.
+
+> -- Creado por [Gwannon](|AUTHORURL|) --
