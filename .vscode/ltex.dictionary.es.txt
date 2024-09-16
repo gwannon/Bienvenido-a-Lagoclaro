@@ -22,3 +22,5 @@ lembas
 proficiencia
 proficiencia
 1d20
+AUTHOR
+VERSION

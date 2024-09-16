@@ -1,7 +1,7 @@
 # Bienvenido a Lagoclaro
 Reglas de pesca para Dungeons&amp;Dragons 5e.
 
-Desarrollo usando OPEN	GAME	LICENSE	Version	1.0a
+Desarrollo usando OPEN GAME	LICENSE	Version	1.0a
 
 ## Descargar PDF
 [itch.io](https://gwannon.itch.io/bienvenido-a-lagoclaro)

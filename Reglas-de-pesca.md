@@ -157,7 +157,7 @@ Están ordenados por su valor, de forma que según recorres la tabla son más va
 3. _el peso del objeto mágico_
 4. _el precio del objeto mágico_
 
-Al precio del pescado se le suma el peso en mp y al peso se le suma el precio en decigramos. Por ejemplo, con un lucio orco sacamos en el d8 un 7, vale 28 mp (21 + 7) y pesa 7,28 kg (7 + 0,28). 
+Al precio del pescado se le suma el peso en mp y al peso se le suma el precio en decigramos. Por ejemplo, con un lucio orco sacamos en el 1d8 un 7, vale 28 mp (21 + 7) y pesa 7,28 kg (7 + 0,28). 
 
 ***
 

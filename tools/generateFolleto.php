@@ -31,7 +31,6 @@ foreach ($tags as $tag => $value) {
 
 $html = str_replace("<hr />", "</div><div>", $html);
 
-
 file_put_contents(__DIR__ . "/../Reglas-de-pesca.html", $html);
 
 echo "InfoKey: Subject\n";
