@@ -24,8 +24,8 @@ Para encontrar uno de los lugares de pesca excepcionales de Lagoclaro debe hacer
 ***
 
 * **Fallo:** Solo encuentra una zona de pesca mala.
-* **Crítico:** El sitio es excepcional. Encuentra una zona de pesca muy buena.
-* **Pifia:** Se pierde y desgraciadamente malgasta el día, pero seguramente disfrutará de unos paisajes excepcionales.
+* **Éxito excepcional (&gt;= CA + 10):** El sitio es excepcional. Encuentra una zona de pesca muy buena.
+* **Fallo garrafal (&lt;= CA - 10):** Se pierde y desgraciadamente malgasta el día, pero seguramente disfrutará de unos paisajes excepcionales.
 
 Encontrar una buena zona de pesca supone 1 hora de búsqueda.
 
@@ -76,8 +76,8 @@ Lanzar la caña con precisión al lugar adecuado es un arte que lleva años perf
 
 * **Éxito:** Lanza perfectamente y parece que algo pica.
 * **Fallo:** Lanza, pero parece que no pica nada. Tendrá que volver a lanzar. Pierde el cebo.
-* **Crítico:** Lanza y parece que ha picado algo grande. Tiene ventaja a la hora de recoger.
-* **Pifia:** Lanza literalmente la caña muy lejos y la pierde en las aguas del lago.
+* **Éxito excepcional (&gt;= CA + 10):** Debe haber picado algo grande. Tiene ventaja a la hora de recoger.
+* **Fallo garrafal (&lt;= CA - 5):** Lanza literalmente la caña muy lejos y la pierde en las aguas del lago.
 
 Cada lance supone 1 hora, con lo que de normal se puede intentar 7 lances al día (7 horas de lances más 1 hora de buscar el punto de pesca). Debe considerar que una tirada de lance supone en realidad varios lances y recogidas de carrete.
 
@@ -94,9 +94,9 @@ Ahora hay que sacar el pez de agua con una tirada de FUE. La CA la determina 5 +
 No deberías saber la CA exacta antes de tirar, pero pueden decirte la CA en rangos de 5. Si la CA es 17, su DM puede decirle entre 15 y 20.
 
 * **Éxito:** Saca el pez con éxito.
-* **Fallo:** Su pez se escapa, se rompe el sedal. Pierde el cebo.
-* **Crítico:** Saca el pez y pasa algo increíble que puede contar en la taberna. Tiene ventaja al fanfarronear con otras pescadoras o pescadores.
-* **Pifia:** Rompe la caña debido a la excesiva tensión. Deberá conseguir una nueva.
+* **Fallo:** Su pez se escapa y pierde el cebo.
+* **Éxito excepcional (&gt;= CA + 10):** Saca el pez y pasa algo increíble que puede contar en la taberna. Tiene ventaja al fanfarronear con otras pescadoras o pescadores.
+* **Fallo garrafal (&lt;= CA - 10):** Rompe la caña debido a la excesiva tensión. Deberá conseguir una nueva.
 
 Una vez fuera del agua, podrá saber la especie, el peso y el valor en la lonja de pescado y recuerde **volver a poner cebo** después de cada captura.
 
@@ -108,8 +108,8 @@ Al contar su anécdota, debe hacer una tirada de Engañar (CA 15). Gastar 5 mo e
 
 * **Éxito:** Le aplauden y le dan consejos (ventaja) a una futura tirada para buscar un lugar de pesca.
 * **Fallo:** Se ríen y te llaman exagerado.
-* **Crítico:** A discreción del DM como invitarte a un exclusivo concurso de pesca.
-* **Pifia:** Le abuchean, le llaman mentiroso y le echan de la taberna.
+* **Éxito excepcional (&gt;= CA + 10):** A discreción del DM como invitarte a un exclusivo concurso de pesca.
+* **Fallo garrafal (&lt;= CA - 10):** Le abuchean, le llaman mentiroso y le echan de la taberna.
 
 Si puedes mostrar el pez capturado de tu historia o alguna otra prueba como un trofeo la CA baja a 10.
 
