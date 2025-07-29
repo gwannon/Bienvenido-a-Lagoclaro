@@ -10,6 +10,11 @@
     content="Bienvenido a Lagoclaro, disfrute de su retiro de pesca">
   <meta property="og:description"
     content="En este folleto, patrocinado por la mancomunidad de Lagoclaro en conjunción con el gremio de cerveceros, podrá encontrar interesantes reglas de pesca para Dungeons&Dragons 5e. Versión 1.0.1">
+  <meta property="og:image" content="https://reglaspesca.gwannon.com/images/portada.jpg">
+    <meta property="og:url" content="https://reglaspesca.gwannon.com/" />
+
+
+    
   <style>
     @font-face {
       font-family: 'AlmendraDisplay';
@@ -229,6 +234,21 @@
       background-size: var(--s) var(--s); 
     }
 
+    a.pdf {
+      position: fixed;
+      bottom: 0px;
+      right: 0px;
+      color: white;
+      background-color: var(--bgcolor1);
+      display: block;
+      padding: 20px;
+      margin: 0px;
+      font-family: 'AlmendraDisplay';
+      font-size: 30px;
+      text-decoration: none;
+      z-index: 100;
+  }
+
     @media screen {
       section > div:nth-of-type(1) { order: 1; }
       section > div:nth-of-type(2) { order: 2; }
@@ -253,12 +273,18 @@
         size: A4 landscape;
         margin: 0;
       }
+
+      .nopdf {
+        display: none !important;
+        visibility: hidden !important;
+      }
     }
   </style>
 </head>
 <body>
   <section>
     <div>
+      <a class="nopdf" href="/AccReglas-de-pesca.md">Ir a versión en texto plano</a>
       <h1>Bienvenido a Lagoclaro, disfrute de su retiro de pesca</h1>
 <p>¿Está cansado de matar monstruos en oscuras mazmorras? ¿Su sanador le ha dicho que el estrés acabará con usted antes de subir de nivel?</p>
 <p>En ese caso, el retiro de pesca en <strong>Lagoclaro es la solución a sus problemas</strong>.</p>
@@ -541,5 +567,6 @@
 </blockquote>
     </div>
   </section>
+  <a class="nopdf pdf" href="/pdf/">Descargar PDF</a>
 </body>
 </html>
