@@ -24,7 +24,7 @@ use FastVolt\Helper\Markdown;
 $mkd = Markdown::new();
 $mkd->setContent(file_get_contents(__DIR__ . "/../Reglas-de-pesca.md"));
 
-file_put_contents(__DIR__ . "/AccReglas-de-pesca.md", str_replace(["\sp", "\sc", "\sinc", "\conc", "&nbsp;\n", "\n\n\n"], "", file_get_contents(__DIR__ . "/../Reglas-de-pesca.md")));
+file_put_contents(__DIR__ . "/../AccReglas-de-pesca.md", str_replace(["\sp", "\sc", "\sinc", "\conc", "&nbsp;\n", "\n\n\n"], "", file_get_contents(__DIR__ . "/../Reglas-de-pesca.md")));
 
 $tags['HTML'] = $mkd->toHtml();
 $html = file_get_contents(__DIR__ . "/template.html");
