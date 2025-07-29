@@ -228,6 +228,25 @@
         repeating-linear-gradient(45deg,var(--bgcolor1) -6.25% 6.25%, var(--bgcolor2) 0 18.75%);
       background-size: var(--s) var(--s); 
     }
+
+    @media screen {
+      section > div:nth-of-type(1) { order: 1; }
+      section > div:nth-of-type(2) { order: 2; }
+      section > div:nth-of-type(3) { order: 3; }
+      section > div:nth-of-type(4) { order: 4; }
+      section > div:nth-of-type(5) { order: 5; }
+      section > div:nth-of-type(6) { order: 6; }
+  
+      section {
+        gap: 0px !important;
+        padding: 0px !important;
+      }
+
+      section > div { 
+        width: 100%;
+        height: auto;
+      }
+    }
   
     @media print {
       @page {

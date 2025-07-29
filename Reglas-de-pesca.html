@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bienvenido a Lagoclaro, disfrute de su retiro de pesca</title>
+  <meta name="description"
+    content="En este folleto, patrocinado por la mancomunidad de Lagoclaro en conjunción con el gremio de cerveceros, podrá encontrar interesantes reglas de pesca para Dungeons&Dragons 5e. Versión 1.0.1">
+  <meta property="og:title"
+    content="Bienvenido a Lagoclaro, disfrute de su retiro de pesca">
+  <meta property="og:description"
+    content="En este folleto, patrocinado por la mancomunidad de Lagoclaro en conjunción con el gremio de cerveceros, podrá encontrar interesantes reglas de pesca para Dungeons&Dragons 5e. Versión 1.0.1">
+  <style>
+    @font-face {
+      font-family: 'AlmendraDisplay';
+      font-style: normal;
+      font-weight: 400;
+      src: url(./fonts/AlmendraDisplay-Regular.ttf) format('truetype');
+    }
+
+    @font-face {
+      font-family: 'MedievalSharp';
+      font-style: normal;
+      font-weight: 400;
+      src: url(./fonts/MedievalSharp-Regular.ttf) format('truetype');
+    }
+
+    :root {
+      --bgcolor1: #2f7d20;
+      --bgcolor2: #30ab19;
+      --bgcolor3: #183b11;
+      --bordercolor: #00afff;
+      --bg: #a5efff;
+      --bginside: #3597f0;
+    }
+
+    body {
+      background-color: var(--bg);
+      padding: 0px;
+      margin: 0px;
+      font-family: "MedievalSharp", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 13px;
+      line-height: 110%;
+      color: black;
+    }
+  
+    section {
+      display: flex;
+      gap: 40px;
+      height: 100vh;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+  
+    section > div {
+      border: 1px solid var(--bordercolor);
+      width: calc(33.33% - 27px);
+      height: calc(100vh - 40px);
+      box-sizing: border-box;
+      background: var(--bginside) url('./images/lago1.jpg') center bottom no-repeat;
+      background-size: 100% auto;
+      padding: 0 10px 10px 10px;
+    }
+  
+    section > div:nth-of-type(1) { order: 6; background-image: url('./images/lago3.jpg'); }
+    section > div:nth-of-type(2) { order: 1; }
+    section > div:nth-of-type(3) { order: 2; background-image: url('./images/lago2.jpg'); }
+    section > div:nth-of-type(4) { order: 3; background-image: url('./images/lago3.jpg'); }
+    section > div:nth-of-type(5) { order: 4; }
+    section > div:nth-of-type(6) { order: 5; background-image: url('./images/lago2.jpg'); }
+  
+    h1, h2, h3, h4 {
+      font-family: "AlmendraDisplay", cursive;
+    }
+
+    h1 + *, h2 + * {
+      margin-top: 25px;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      text-align: center;
+      line-height: 85%;
+      color: var(--bgcolor3);
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, .3), 0px -1px 0px rgba(0, 0, 0, .7);
+      margin-top: 20px;
+      font-weight: 900;
+    }
+  
+    h2 {
+      --ribbon-size: 50px;
+      --padding: 10px;
+      background-color: var(--bgcolor1);
+      color: #fff;
+      font-size: 1.8em;
+      padding: var(--padding);
+      position: relative;
+      margin-left: var(--ribbon-size);
+      margin-right: var(--ribbon-size);
+      margin-bottom: var(--padding);
+      text-align: center;
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, .3), 0px -1px 0px rgba(0, 0, 0, .7);
+    }
+  
+    h2:before {
+      content: "";
+      height: 100%;
+      box-sizing: border-box;
+      width: calc(100% + var(--ribbon-size));
+      background-color: var(--bgcolor2);
+      background: linear-gradient(
+        90deg,
+        var(--bgcolor2) calc((var(--ribbon-size) / 2) + var(--padding)),
+        var(--bgcolor3) calc((var(--ribbon-size) / 2) + var(--padding)),
+        var(--bgcolor3) calc(100% - (var(--ribbon-size) / 2) - var(--padding)),
+        var(--bgcolor2) calc(100% - (var(--ribbon-size) / 2) - var(--padding))
+      );
+      position: absolute;
+      left: calc(var(--ribbon-size) / -2);
+      top: var(--padding);
+      clip-path: polygon(
+        0% 0%,
+        calc(var(--ribbon-size) / 2) 0%,
+        calc(var(--ribbon-size) / 2) calc(100% - var(--padding)),
+        calc(100% - (var(--ribbon-size) / 2)) calc(100% - var(--padding)),
+        calc(100% - (var(--ribbon-size) / 2)) 0%,
+        100% 0%,
+        calc(100% - (var(--padding) * 2)) 50%,
+        100% 100%,
+        calc(100% - (var(--ribbon-size) / 2) - var(--padding)) 100%,
+        calc(100% - (var(--ribbon-size) / 2) - var(--padding))
+        calc(100% - var(--padding)),
+        calc((var(--ribbon-size) / 2) + var(--padding)) calc(100% - var(--padding)),
+        calc((var(--ribbon-size) / 2) + var(--padding)) 100%,
+        0% 100%,
+        calc(var(--padding) * 2) 50%
+      );
+    }
+  
+    h2:after {
+      content: "";
+      position: absolute;
+      background-color: var(--bgcolor3);
+      width: 100%;
+      bottom: calc(var(--padding) * -1);
+      left: 0px;
+      height: var(--padding);
+      clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        calc(100% - var(--padding)) 100%,
+        calc(100% - var(--padding)) 0%,
+        var(--padding) 0%,
+        var(--padding) 100%
+      );
+    }
+
+    h3 {
+      line-height: 110%;
+      font-size: 1.9em;
+      color: var(--bgcolor1);
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, .3), 0px -1px 0px rgba(0, 0, 0, .7);
+      padding: 0;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    h4 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      line-height: 110%;
+      font-size: 1.4em;
+    }
+
+    h4 + p {
+      margin-top: 5px;
+    }
+
+    p {
+      margin-top: 5px;
+    }
+
+    table thead tr {
+      background-color: var(--bgcolor1);
+    } 
+
+    table tbody tr:nth-of-type(even) {
+      background-color: var(--bgcolor2);
+    } 
+
+    div > table:first-child,
+    div > h4:first-child {
+      margin-top: 10px;
+    }
+
+    ul, ol {
+      padding-left: 18px;
+      font-size: 12px;
+    }
+
+    blockquote p {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    a {
+      color: black;
+    }
+
+    h2 + p:first-letter {
+      text-transform: uppercase;
+      font-family: 'AlmendraDisplay', cursive;
+      font-size: 1.8em;
+      line-height: 150%;
+      font-weight: 900;
+      display: block;
+      float: left;
+      margin: 3px 10px 0px 0px;
+      padding: 5px 10px 0px;
+      border: 1px solid var(--bgcolor3);
+      color: #000;
+      min-height: 64px;
+      --s: 15px;   
+      background:
+        linear-gradient(135deg,#0000 18.75%,var(--bgcolor1) 0 31.25%,#0000 0),
+        repeating-linear-gradient(45deg,var(--bgcolor1) -6.25% 6.25%, var(--bgcolor2) 0 18.75%);
+      background-size: var(--s) var(--s); 
+    }
+
+    @media screen {
+      section > div:nth-of-type(1) { order: 1; }
+      section > div:nth-of-type(2) { order: 2; }
+      section > div:nth-of-type(3) { order: 3; }
+      section > div:nth-of-type(4) { order: 4; }
+      section > div:nth-of-type(5) { order: 5; }
+      section > div:nth-of-type(6) { order: 6; }
+  
+      section {
+        gap: 0px !important;
+        padding: 0px !important;
+      }
+
+      section > div { 
+        width: 100%;
+        height: auto;
+      }
+    }
+  
+    @media print {
+      @page {
+        size: A4 landscape;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div>
+      <h1>Bienvenido a Lagoclaro, disfrute de su retiro de pesca</h1>
+<p>¿Está cansado de matar monstruos en oscuras mazmorras? ¿Su sanador le ha dicho que el estrés acabará con usted antes de subir de nivel?</p>
+<p>En ese caso, el retiro de pesca en <strong>Lagoclaro es la solución a sus problemas</strong>.</p>
+<p>En este folleto, patrocinado por la mancomunidad de Lagoclaro en conjunción con el gremio de cerveceros de Lagoclaro, podrá encontrar interesantes <strong>reglas de pesca para Dungeons &amp; Dragons 5e</strong>.</p>
+<h2>La pesca</h2>
+<p>En la pesca entran en juego tres pasos, buscar el lugar, preparar el equipo y el cebo y lanzar/recoger.</p>
+<p>Pero lo más importante es fanfarronear en la taberna de sus capturas (reales o no) ante otras personas tomando una de las cervezas artesanas que tanta fama dan a Lagoclaro.</p>
+<p>Desde la mancomunidad de Lagoclaro recomendamos <strong>no pescar más de 8 horas al día</strong>, y dedicar el resto del día a otras actividades que ofrece Lagoclaro a los visitantes como usted.</p>
+<h3>Buscando el lugar</h3>
+<p>Lagoclaro es un lugar para pescar excepcional, pero en nuestro lago hay sitios mejores que otros para pescar y descubrirlos es muy importante.</p>
+<p>Para encontrar uno de los lugares de pesca excepcionales de Lagoclaro debe hacer una <strong>tirada de Supervivencia (CA 15)</strong>.</p>
+<ul>
+<li><strong>Éxito:</strong> Encuentra una zona de pesca buena.</li>
+</ul>
+</div><div>
+<ul>
+<li><strong>Fallo:</strong> Solo encuentra una zona de pesca mala.</li>
+<li><strong>Éxito excepcional (&gt;= CA + 10):</strong> El sitio es excepcional. Encuentra una zona de pesca muy buena.</li>
+<li><strong>Fallo garrafal (&lt;= CA - 10):</strong> Se pierde y desgraciadamente malgasta el día, pero seguramente disfrutará de unos paisajes excepcionales.</li>
+</ul>
+<p>Encontrar una buena zona de pesca supone 1 hora de búsqueda.</p>
+<h3>Preparando el cebo y la caña</h3>
+<p>Una vez encontrados un buen punto de pesca debemos preparar nuestras cañas y cebos.</p>
+<p>A efecto de reglas, los aparejos de pesca (cañas, carretes, anzuelos, etc.) se consideran herramientas, así que las reglas que afectan a las herramientas afectan a los útiles de pesca.</p>
+<h4>Competencia con herramientas de pesca</h4>
+<p>A la hora de crear su PJ, puede sustituir cualquier competencia con herramientas por esta competencia.</p>
+<p>En su creación exploradores/as y druidas obtienen esta competencia de forma gratuita.</p>
+<p>Si es competente con las herramientas de pesca puede sumar su bono de proficiencia a las tiradas de lanzar y recoger.</p>
+<h4>Cebos</h4>
+<p>Tan importante como los aparejos de pesca es el cebo, desde la humilde miga de pan hasta el pan élfico.</p>
+<table>
+<thead>
+<tr>
+<th>Cebo</th>
+<th>Efecto al lanzar</th>
+<th>¹Precio (mp)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Miga de pan</td>
+<td>Desventaja</td>
+<td>0 mp</td>
+</tr>
+<tr>
+<td>Gusanos secos</td>
+<td>Desventaja</td>
+<td>3 mp</td>
+</tr>
+<tr>
+<td>²Gusanos vivos</td>
+<td>Normal</td>
+<td>5 mp</td>
+</tr>
+<tr>
+<td>³Miga de pan de los enanos</td>
+<td>Normal</td>
+<td>8 mp</td>
+</tr>
+<tr>
+<td>Mezcla de pesca gnoma</td>
+<td>Ventaja</td>
+<td>8 mp</td>
+</tr>
+<tr>
+<td>Miga de pan élfico</td>
+<td>Ventaja</td>
+<td>10 mp</td>
+</tr>
+<tr>
+<td>⁴Moco de trol</td>
+<td>Ventaja</td>
+<td>0 mp</td>
+</tr>
+</tbody>
+</table>
+</div><div>
+<ol>
+<li><i>precio por paquete de 5 cebos</i></li>
+<li><i>solo puede usarse un día, al día siguiente se convierte en gusanos secos</i></li>
+<li><i>es imposible perderlo al lanzar a no ser que se pierda la caña</i></li>
+<li><i>se obtiene directamente de un trol muerto</i></li>
+</ol>
+<p>Y recuerde que en nuestros establecimientos encontrará una excelente selección de cañas y los mejores cebos de la comarca, todos a unos precios muy asequibles.</p>
+<h3>Lanzar y recoger</h3>
+<p>Una vez encontrado el lugar idóneo y tener su caña y su cebo preparado empieza lo divertido: lanzar y recoger, la persona contra el pez.</p>
+<h4>Lanzar</h4>
+<p>Lanzar la caña con precisión al lugar adecuado es un arte que lleva años perfeccionar. Para lanzar debe tirar DES (CA 10)</p>
+<ul>
+<li><strong>Éxito:</strong> Lanza perfectamente y parece que algo pica.</li>
+<li><strong>Fallo:</strong> Lanza, pero parece que no pica nada. Tendrá que volver a lanzar. Pierde el cebo.</li>
+<li><strong>Éxito excepcional (&gt;= CA + 10):</strong> Debe haber picado algo grande. Tiene ventaja a la hora de recoger.</li>
+<li><strong>Fallo garrafal (&lt;= CA - 5):</strong> Lanza literalmente la caña muy lejos y la pierde en las aguas del lago.</li>
+</ul>
+<p>Cada lance supone 1 hora, con lo que de normal se puede intentar 7 lances al día (7 horas de lances más 1 hora de buscar el punto de pesca). Debe considerar que una tirada de lance supone en realidad varios lances y recogidas de carrete.</p>
+<p>Una zona de pesca muy buena se convierte en buena con 3 lances con éxito y una buena pasa a mala con otros 3 lances. Una mala zona nunca empeora más.</p>
+<h4>Recoger</h4>
+<p>Una vez lanzada la caña con el cebo, su DM debe determinar en secreto la especie y el peso. Si la zona de pesca fue muy buena se tira en la tabla de capturas con ventaja, si es buena se tira normal y si es mala se tira con desventaja.</p>
+<p>Ahora hay que sacar el pez de agua con una tirada de FUE. La CA la determina 5 + peso. </p>
+</div><div>
+<p>No deberías saber la CA exacta antes de tirar, pero pueden decirte la CA en rangos de 5. Si la CA es 17, su DM puede decirle entre 15 y 20.</p>
+<ul>
+<li><strong>Éxito:</strong> Saca el pez con éxito.</li>
+<li><strong>Fallo:</strong> Su pez se escapa y pierde el cebo.</li>
+<li><strong>Éxito excepcional (&gt;= CA + 10):</strong> Saca el pez y pasa algo increíble que puede contar en la taberna. Tiene ventaja al fanfarronear con otras pescadoras o pescadores.</li>
+<li><strong>Fallo garrafal (&lt;= CA - 10):</strong> Rompe la caña debido a la excesiva tensión. Deberá conseguir una nueva.</li>
+</ul>
+<p>Una vez fuera del agua, podrá saber la especie, el peso y el valor en la lonja de pescado y recuerde <strong>volver a poner cebo</strong> después de cada captura.</p>
+<h3>Fanfarronear en la taberna</h3>
+<p>Tras un día de pesca, la mancomunidad de Lagoclaro sabe que no hay nada mejor que disfrutar de una cerveza en una de las tabernas locales compartiendo anécdotas de pesca con otros pescadores y pescadoras.</p>
+<p>Al contar su anécdota, debe hacer una tirada de Engañar (CA 15). Gastar 5 mo en bebida da ventaja.</p>
+<ul>
+<li><strong>Éxito:</strong> Le aplauden y le dan consejos (ventaja) a una futura tirada para buscar un lugar de pesca.</li>
+<li><strong>Fallo:</strong> Se ríen y te llaman exagerado.</li>
+<li><strong>Éxito excepcional (&gt;= CA + 10):</strong> A discreción del DM como invitarte a un exclusivo concurso de pesca.</li>
+<li><strong>Fallo garrafal (&lt;= CA - 10):</strong> Le abuchean, le llaman mentiroso y le echan de la taberna.</li>
+</ul>
+<p>Si puedes mostrar el pez capturado de tu historia o alguna otra prueba como un trofeo la CA baja a 10.</p>
+<h3>Descansos largos</h3>
+<p>Puede dedicar 4 de las 8 horas de un descanso largo a pescar, pero la actividad debe ser relajante sin ningún tipo de intención más que disfrutar de la pesca. Así pues durante un descanso largo no se puede pescar, por ejemplo, para forrajear o dentro de un concurso de pesca. </p>
+<p>Si se pesca durante un descanso largo todas las tiradas bajan de ventaja a normales y las normales a con desventaja, para reflejar que no se está totalmente atento.   </p>
+</div><div>
+<h2>Las capturas</h2>
+<p>Los ríos y lagos que hay en Lagoclaro son famosos por su gran variedad de pesca.</p>
+<p>En el siguiente cuadro puede ver las especies más comunes en nuestras prístinas aguas.</p>
+<p>Están ordenados por su valor, de forma que según recorres la tabla son más valiosas.</p>
+<table>
+<thead>
+<tr>
+<th>1d20</th>
+<th>Captura</th>
+<th>Peso (kg)</th>
+<th>Precio (mp)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Zapato viejo</td>
+<td>1d4</td>
+<td>Sin valor</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Escudo roto</td>
+<td>1d8</td>
+<td>Sin valor</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Rueda de carro</td>
+<td>2d12</td>
+<td>Sin valor</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Barbo</td>
+<td>1d4</td>
+<td>4 mp</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Trucha</td>
+<td>1d4</td>
+<td>5 m</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Trucha asalmonada</td>
+<td>1d4</td>
+<td>6 mp</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Trucha arcoíris</td>
+<td>1d4</td>
+<td>7 mp</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Perca</td>
+<td>1d6</td>
+<td>7 mp</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Carpa salvaje</td>
+<td>1d12</td>
+<td>8 mp</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Salmón</td>
+<td>1d6</td>
+<td>12 mp</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Salmón real</td>
+<td>1d6+2</td>
+<td>14 mp</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Anguila</td>
+<td>1d6</td>
+<td>18 mp</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Lucio orco</td>
+<td>1d8</td>
+<td>21 mp</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Perca atruchada</td>
+<td>1d8+2</td>
+<td>24 mp</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Corvina mithril</td>
+<td>2d6</td>
+<td>26 mp</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Siluro dragón</td>
+<td>1d10+2</td>
+<td>28 mp</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Esturión trol</td>
+<td>3d6</td>
+<td>29 mp¹</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Pez de fuego</td>
+<td>2d8</td>
+<td>32 mp</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Trucha élfica</td>
+<td>1d12+2</td>
+<td>40 mp</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Tesoro²</td>
+<td>Especial³</td>
+<td>Especial⁴</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><i>si tiene huevas (30%) su valor final se duplica</i></li>
+<li><i>deberás generar un objeto mágico aleatorio</i></li>
+<li><i>el peso del objeto mágico</i></li>
+<li><i>el precio del objeto mágico</i></li>
+</ol>
+<p>Al precio del pescado se le suma el peso en mp y al peso se le suma el precio en decigramos. Por ejemplo, con un lucio orco sacamos en el 1d8 un 7, vale 28 mp (21 + 7) y pesa 7,28 kg (7 + 0,28). </p>
+</div><div>
+<h2>Pesca y magia</h2>
+<p>Cómo ya hemos dicho antes, las cañas son herramientas, así que cualquier poder mágico que afecte a las herramientas, afecta a los aparejos de pesca.</p>
+<p>Los poderes/habilidades con descripción sonora, como <i>Inspiración Bárdica</i>, y los hechizos con componentes vocales no se pueden usar durante la fase de lanzar y recoger. Todo el mundo sabe que el ruido espanta a los peces.</p>
+<p>Hechizos como <i>Dominar bestias</i> no funcionan porque no puedes ver a los peces desde la orilla.</p>
+<h2>Concursos de pesca</h2>
+<p>Lagoclaro es famoso por su concurso anual de pesca. Tal es su fama que atrae a aficionados y aficionadas a la pesca de todo el mundo.</p>
+<p>El concurso dura 4 días. Hay que apuntarse en las oficinas de la mancomunidad de Lagoclaro y pagar 30 mo, yendo la mitad del dinero recaudado al premio.</p>
+<p>Cada día al anochecer, cada concursante trae su pieza más grande a pesar y registrar. También es revisado por si hubiera algún tipo de trampa mágica. <strong>Gana el que sume más peso al final de los 4 días.</strong> En caso de empate, gana el que valga más dinero sin modificar por peso.</p>
+<p>Una opción más rápida suele ser de 1 o 2 días y gana la persona que consiga la captura más grande.</p>
+<p>Las reglas se resumen en que <strong>nadie puede ayudar al pescador/a</strong> y cuenta como captura toda pieza con <strong>branquias</strong>, cubierta por los menos un <strong>80% de escamas de pez</strong>, que sea <strong>de este plano</strong> y estuviera <strong>viva antes de su pesca</strong>.</p>
+<p>&nbsp;</p>
+<blockquote>
+<p>-- Creado por <a href="https://gwannon.itch.io/">@Gwannon</a> Ver. 1.0.1 --</p>
+</blockquote>
+    </div>
+  </section>
+</body>
+</html>
